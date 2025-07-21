@@ -1,0 +1,67 @@
+/* alternate box-model, sizes & font */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: lightgray;
+    overflow-y: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.2rem);
+}
+
+/* page content */
+
+.page {
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 5%;
+    min-height: 100vh;
+    background-color: white;
+
+}
+
+/* enumerated nested lists system (max of 2 levels supported) */
+
+ol li {
+    display: block;
+}
+
+ol>li {
+    counter-increment: section;
+}
+
+ol>li::before {
+    content: counter(section) ". ";
+    font-weight: bold;
+}
+
+ol>li>ol {
+    counter-reset: subsection;
+}
+
+ol>li>ol>li {
+    counter-increment: subsection;
+}
+
+ol>li>ol>li::before {
+    content: counter(section) "." counter(subsection) " ";
+    margin-inline-end: 0.2em;
+}
+
+/* responsivity */
+
+@media screen and (max-width: 425px) {
+    .page {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
