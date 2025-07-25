@@ -26,7 +26,17 @@ body {
     padding: 5%;
     min-height: 100vh;
     background-color: white;
+}
 
+/* tip box */
+
+.tip {
+    border-left: 4px solid #0077cc;
+    padding-left: 1em;
+    margin-top: 1em;
+    background-color: #f0f8ff;
+    font-size: 0.95em;
+    line-height: 1.5;
 }
 
 /* enumerated nested lists system (max of 2 levels supported) */

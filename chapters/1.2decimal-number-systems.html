@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decimal System</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Chapter 2 – Decimal Number System</h1>
+            <p><small>16/06/2025 — #mathematics</small></p>
+        </header>
+
+        <main>
+            <h2>Definition</h2>
+            <p>
+                This is the base-10 system. To represent any number in this
+                system, we use 10 digits, which are called
+                <strong>numerals</strong>. The digits are:
+                <code>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code>. The digit
+                <strong>0</strong> is considered the only
+                <strong>non-significant</strong> digit, while the others are
+                <strong>significant</strong>.
+            </p>
+
+            <div class="tip">
+                <strong>Numeral:</strong> A numeral is a class of word used
+                to indicate quantity, order, fraction, or multiplication of
+                beings or objects.
+            </div>
+
+            <h2>Absolute value and Relative value</h2>
+            <ul>
+                <li>
+                    The <strong>absolute value</strong> of a digit is the
+                    digit itself, regardless of its position in the number.
+                </li>
+                <li>
+                    The <strong>relative value</strong> depends on the
+                    digit’s position within the number.
+                </li>
+            </ul>
+
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>
+                    In the number <code>572</code>, the absolute values of
+                    the digits <code>5</code>, <code>7</code>, and
+                    <code>2</code> are respectively <code>5</code>,
+                    <code>7</code>, and <code>2</code>.
+                </li>
+                <li>
+                    Since <code>572 = 500 + 70 + 2</code>, the relative
+                    value of digit <code>5</code> is <code>500</code>.
+                </li>
+            </ul>
+
+            <p><em>TQM - Fundamental, chapter 2, page 4.</em></p>
+
+            <h2>Classes and Orders</h2>
+            <p><em>(image placeholder: "1. Classes e ordens.png")</em></p>
+
+            <div class="tip">
+                <strong>Decimal Position Principle:</strong> <br />
+                "Each ten units of a given order form one unit of the next higher order."
+            </div>
+
+            <h2>Number Decomposition in the Decimal System</h2>
+            <p>
+                Every number written in the decimal system can be decomposed
+                as the sum of the products of its digits, ordered from right
+                to left, by increasing powers of 10, starting with power
+                <code>10^0</code>.
+            </p>
+
+            <p><strong>Examples:</strong></p>
+            <p>
+                <em>(image placeholder: "2. Exemplos - Decomposição.png")</em>
+            </p>
+            <p><em>TQM - Fundamental, chapter 2, page 4.</em></p>
+
+            <h2>Roman Numerals</h2>
+            <p>The Roman numeral system uses the following digits:</p>
+            <ul>
+                <li><code>I = 1</code></li>
+                <li><code>V = 5</code></li>
+                <li><code>X = 10</code></li>
+                <li><code>L = 50</code></li>
+                <li><code>C = 100</code></li>
+                <li><code>D = 500</code></li>
+                <li><code>M = 1000</code></li>
+            </ul>
+
+            <p>
+                To convert a number written in Roman numerals to decimal or
+                vice versa, we must understand a few key properties:
+            </p>
+
+            <h3>Properties:</h3>
+            <ol>
+                <li>The reading direction is left to right.</li>
+                <li>
+                    If the next digit is less than or equal to the current
+                    one, add them.<br />
+                    <strong>Example:</strong>
+                    <code>MD = 1000 (M) + 500 (D) = 1500</code>
+                </li>
+                <li>
+                    If the next digit is greater than the current one,
+                    subtract the current from the next.<br />
+                    <strong>Example:</strong>
+                    <code>CM = 1000 (M) - 100 (C) = 900</code>
+                </li>
+                <li>
+                    Only digits associated with powers of 10 (<code>I, X, C, M</code>) may appear up to three times in a
+                    row.<br />
+                    <strong>Example:</strong> <code>MMMDCVII = 3607</code>
+                </li>
+                <li>
+                    Each bar placed over a group of digits multiplies the
+                    value of that group by 1000.<br />
+                    <strong>Example:</strong>
+                    <code>‾VII‾ CCXXXV = 7235</code>
+                </li>
+            </ol>
+        </main>
+
+        <footer>
+            <p>
+                <a target="_blank" href="https://github.com/Vittela">My Github</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
